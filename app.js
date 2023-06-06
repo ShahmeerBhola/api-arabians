@@ -19,9 +19,6 @@ const myContract = new web3.eth.Contract(contractAbi, contractAddress);
 // Base URL of the NFT metadata
 const metadataBaseUrl =
   "https://hollywoodpunks.mypinata.cloud/ipfs/QmRgK13azyKTXbaaW5yhFxqtpEUPZje9zPTxEhVBqAAKSg/";
-app.get("/", (req, res) => {
-  return res.status(200).json("hello world");
-});
 
 // API endpoint to check if an NFT is minted and return metadata if true
 app.get("/nft/:nftId", async (req, res) => {
