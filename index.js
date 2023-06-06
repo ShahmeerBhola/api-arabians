@@ -11,7 +11,7 @@ const providerUrl =
 const web3 = new Web3(new Web3.providers.HttpProvider(providerUrl));
 
 // Replace `MyContract` with the actual name of your ERC721 contract
-const contractAbi = require("../abi.json");
+const contractAbi = require("./abi.json");
 const contractAddress = "0x3Fc19E076043D2466429BcA55AFafafb4Fc22464"; // Replace with your contract address
 
 const myContract = new web3.eth.Contract(contractAbi, contractAddress);
